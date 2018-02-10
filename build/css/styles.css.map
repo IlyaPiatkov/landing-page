@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles.sass","_header.sass"],"names":[],"mappings":"AACA,MACE,SAAU,CAAI,KAEd,cAJS,CAIU,QCHnB,eACA,WAAY,CAAI","file":"styles.css","sourcesContent":["$font: 36px;\n.test {\n  color: red; }\n.big {\n  font-size: $font; }\n\n@import \"header\";\n\n",".header {\n  font-size: 20px;\n  color: green; }\n"]}
