@@ -1,2 +1,23 @@
 .main-header {
+  @include container;
+}
+.main-header__menu {
+  display: flex;
+}
+.main-header__gamburger {
+  width: 34px;
+  height: 20px;
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+    width: 34px;
+    height: 4px;
+    background: $bg-gamburger;
+    box-shadow: 0 8px 0 $bg-gamburger,
+                0 16px 0 $bg-gamburger;
+  }
+  &:hover {
+    cursor: pointer;
+  }
 }
