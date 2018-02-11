@@ -1,11 +1,10 @@
 .main-header {
   @include container;
+  @include flex-col;
   margin-top: 80px;
-  display: flex;
-  flex-direction: column;
 }
 .main-header__menu {
-  display: flex;
+  @include flex-row;
   justify-content: space-between;
 }
 .main-header__logo {
@@ -36,4 +35,21 @@
   &:hover {
     cursor: pointer;
   }
+}
+.main-header__info {
+  @include flex-col;
+  margin-top: 135px;
+}
+.main-header__title {
+  @include title-text;
+  align-self: center;
+}
+.main-header__wrapper-text {
+  @include flex-col;
+  margin-top: 25px;
+}
+.main-header__text {
+  @include standard-text;
+  display: inline-block;
+  align-self: center;
 }
