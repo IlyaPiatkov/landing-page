@@ -9,3 +9,9 @@
   line-height: 25px;
   color: $color-standard-text;
 }
+@mixin title-text {
+  font-family: $font-title-page;
+  font-size: 50px;
+  line-height: 46px;
+  color: $color-title-text;
+}

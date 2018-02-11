@@ -4,6 +4,14 @@ $font-title-page: "OpenSans-SemiBold", "arial", sans-serif;
 
 //color
 $color-standard-text: rgba(0, 0, 0, 0.35);
+$color-title-text: #626262;
+$color-first-word: #fc6744;
 
 //background
 $bg-gamburger: #706b73;
+$bg-border-logo: #746f77;
+
+//class
+.element-decoration-color {
+  color: $color-first-word;
+}

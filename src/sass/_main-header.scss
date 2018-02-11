@@ -1,8 +1,23 @@
 .main-header {
   @include container;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
 }
 .main-header__menu {
   display: flex;
+  justify-content: space-between;
+}
+.main-header__logo {
+  border: 4px solid $bg-border-logo;
+  border-radius: 2px;
+}
+.main-header__logo--decoration {
+  @include title-text;
+  padding: 8px 17px;
+  font-size: 38px;
+  line-height: 46px;
+  opacity: 0.7;
 }
 .main-header__gamburger {
   width: 34px;
@@ -13,6 +28,7 @@
     clear: both;
     width: 34px;
     height: 4px;
+    border-radius: 2px;
     background: $bg-gamburger;
     box-shadow: 0 8px 0 $bg-gamburger,
                 0 16px 0 $bg-gamburger;
