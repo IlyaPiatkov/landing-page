@@ -19,6 +19,22 @@
   letter-spacing: -0.5px;
   color: $color-title-text;
 }
+@mixin form-title{
+  align-self: center;
+  font-family: $font-title-page;
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 0.1px;
+  line-height: 25px;
+  color: $color-title-text;
+}
+@mixin form-input {
+  border: none;
+  border-bottom: 1px solid #c7c7c7;
+  font-family: $font-main-page;
+  font-size: 15px;
+  line-height: 25px;
+}
 @mixin flex-col {
   display: flex;
   flex-direction: column;
@@ -26,4 +42,20 @@
 @mixin flex-row {
   display: flex;
   flex-direction: row;
+}
+@mixin placeholder {
+  border-bottom: 1px solid #c7c7c7;
+  font-family: $font-main-page;
+  font-size: 15px;
+  line-height: 25px;
+  & input::placeholder,
+  & textarea::placeholder {
+    text-indent: 0;
+    transition: text-indent 0.3s ease;
+  }
+  & input:focus::placeholder,
+  & textarea:focus::placeholder {
+    text-indent: -500px;
+    transition: text-indent 0.3s ease;
+  }
 }

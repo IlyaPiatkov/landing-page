@@ -53,3 +53,45 @@
   display: inline-block;
   align-self: center;
 }
+.main-header__wrapper-form {
+  @include flex-row;
+  margin-top: 105px;
+}
+.main-header__form {
+  @include flex-col;
+  @include placeholder;
+  min-width: 375px;
+  box-shadow: 0 0 57px rgba(20, 20, 20, 0.3);
+}
+.main-header__form-title {
+  @include form-title;
+  margin-bottom: 15px;
+}
+.main-header__form-text {
+  @include form-input;
+  margin: 30px 40px 0 40px;
+  &:focus {
+    outline-width: 0;
+  }
+}
+.main-header__form-textarea {
+  @include form-input;
+  margin: 25px 40px 0 40px;
+  min-height: 86px;
+  resize: none;
+  &:focus {
+    outline-width: 0;
+  }
+
+}
+.main-header__btn {
+  margin-top: 20px;
+
+  align-self: center;
+  padding: 14px 65px;
+  font-family: $font-main-page;
+  font-size: 16px;
+  line-height: 25px;
+
+
+}
