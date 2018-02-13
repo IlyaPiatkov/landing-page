@@ -10,3 +10,44 @@
   @include standard-text;
   margin-top: 5px;
 }
+.work-procces__cards {
+  margin-top: 105px;
+  margin-left: 2px;
+}
+.work-procces__cards {
+  @include flex-row;
+  flex-wrap: wrap;
+
+}
+.work-procces__cards-item {
+  @include flex-col;
+  margin-right: 31px;
+  max-width: 261px;
+  height: 262px;
+  background: $color-card-1;
+  &:nth-child(4) {
+    margin-right: 0;
+  }
+}
+.work-procces__cards-title {
+  margin: 17px 0 0 0;
+  align-self: center;
+  font-family: $font-title-page;
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 0.1px;
+  line-height: 25px;
+  color: $color-card-text;
+  order: 2;
+}
+.work-procces__cards-img {
+  margin-top: 55px;
+  align-self: center;
+  order: 1;
+}
+.work-procces__cards-text {
+  order: 3;
+}
+.work-procces__cards-btn {
+  order: 4;
+}
