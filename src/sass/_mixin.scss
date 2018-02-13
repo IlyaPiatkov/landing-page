@@ -5,18 +5,19 @@
 }
 @mixin standard-text {
   margin: 0;
+  display: inline-block;
+  align-self: center;
   font-family: $font-main-page;
   font-size: 16px;
   line-height: 25px;
-  letter-spacing: 0.4px;
   color: $color-standard-text;
 }
 @mixin title-text {
   margin: 0;
+  align-self: center;
   font-family: $font-title-page;
   font-size: 50px;
   line-height: 60px;
-  letter-spacing: -0.5px;
   color: $color-title-text;
 }
 @mixin form-title{

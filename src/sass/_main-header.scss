@@ -42,7 +42,6 @@
 }
 .main-header__title {
   @include title-text;
-  align-self: center;
 }
 .main-header__wrapper-text {
   @include flex-col;
@@ -50,8 +49,6 @@
 }
 .main-header__text {
   @include standard-text;
-  display: inline-block;
-  align-self: center;
 }
 .main-header__wrapper-form {
   @include flex-row;
@@ -85,13 +82,18 @@
 
 }
 .main-header__btn {
-  margin-top: 20px;
-
-  align-self: center;
-  padding: 14px 65px;
-  font-family: $font-main-page;
-  font-size: 16px;
-  line-height: 25px;
-
-
+  margin-top: 22px;
+  margin-bottom: 18px;
+  background: $bg-btn-form;
+  color: $color-btn-text;
+  &:focus {
+    outline-width: 0;
+  }
+  &:hover {
+    cursor: pointer;
+    background: $bg-btn-hover;
+  }
+  &:active {
+    background: $bg-btn-active;
+  }
 }

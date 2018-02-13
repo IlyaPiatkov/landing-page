@@ -1,0 +1,12 @@
+.work-procces {
+  @include container;
+  @include flex-col;
+  margin-top: 132px;
+}
+.work-procces__title {
+  @include title-text;
+}
+.work-procces__text {
+  @include standard-text;
+  margin-top: 5px;
+}
