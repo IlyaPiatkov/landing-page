@@ -21,12 +21,23 @@
 }
 .work-procces__cards-item {
   @include flex-col;
+  position: relative;
   margin-right: 31px;
-  max-width: 261px;
+  width: 261px;
   height: 262px;
   background: $color-card-1;
+  &:nth-child(2) {
+    background: $color-card-2;
+  }
+  &:nth-child(3) {
+    background: $color-card-3;
+  }
   &:nth-child(4) {
     margin-right: 0;
+    background: $color-card-4;
+  }
+  &:hover {
+    box-shadow: 0 0 35px $bg-card-shadow;
   }
 }
 .work-procces__cards-title {
@@ -45,9 +56,53 @@
   align-self: center;
   order: 1;
 }
-.work-procces__cards-text {
+.work-procces__cards-wrapper-text {
+  @include flex-col;
+  margin-top: 15px;
   order: 3;
 }
+.work-procces__cards-text {
+  align-self: center;
+  font-family: $font-main-page;
+  font-weight: normal;
+  font-size: 15px;
+  letter-spacing: 0.1px;
+  line-height: 22px;
+  color: $color-card-text;
+
+}
 .work-procces__cards-btn {
+  position: absolute;
+  bottom: -25px;
+  width: 228px;
+  padding-left: 20px;
+  padding-right: 0;
   order: 4;
+  background: #ffffff;
+  color: $color-card--btn-text;
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+    position: absolute;
+    left: 49px;
+    top: 27px;
+    width: 16px;
+    height: 1px;
+    background: $color-card--btn-text;
+  }
+  &::before {
+    content: "";
+    display: table;
+    clear: both;
+    position: absolute;
+    left: 56px;
+    top: 19px;
+    width: 1px;
+    height: 16px;
+    background: $color-card--btn-text;
+  }
+  &:hover {
+    box-shadow: 0 1px 35px $bg-card-shadow;
+  }
 }
