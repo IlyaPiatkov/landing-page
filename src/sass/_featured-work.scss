@@ -1,3 +1,25 @@
 .featured-work {
   @include container;
+  @include flex-col;
+  margin-top: 300px;
+}
+.featured-work__title {
+  @include title-text;
+}
+.featured-work__text {
+  @include standard-text;
+  margin-top: 5px;
+  padding-left: 5px;
+}
+.featured-work__wrapper-block-img {
+  @include flex-row;
+  flex-wrap: wrap;
+  margin-top: 82px;
+}
+.featured-work__wrapper-block-img--decoration {
+  margin-right: 30px;
+  margin-top: 23px;
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 }

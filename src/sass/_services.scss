@@ -1,0 +1,11 @@
+.services {
+  @include container;
+  @include flex-col;
+  margin-top: 297px;
+}
+.services__title {
+  @include title-text;
+}
+.services__text {
+  
+}
