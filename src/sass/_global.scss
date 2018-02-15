@@ -21,6 +21,8 @@ $bg-btn-form: rgba(255, 92, 54, 1);
 $bg-btn-hover: rgba(255, 92, 54, 0.8);
 $bg-btn-active: rgba(0, 0, 0, 0.65);
 $bg-card-shadow: rgba(20, 20, 21, 0.4);
+$bg-service-info-decoration: rgba(255, 92, 54, 1);
+
 
 //class
 .element-decoration-color {
@@ -41,6 +43,6 @@ $bg-card-shadow: rgba(20, 20, 21, 0.4);
     cursor: pointer;
   }
   &:active {
-    background: $bg-btn-active;
+    background: $bg-btn-form;
   }
 }

@@ -29,6 +29,14 @@
   line-height: 25px;
   color: $color-title-text;
 }
+@mixin service-info-title {
+  margin: 0;
+  font-family: $font-main-page;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 45px;
+
+}
 @mixin form-input {
   border: none;
   border-bottom: 1px solid #c7c7c7;
@@ -58,5 +66,33 @@
   & textarea:focus::placeholder {
     text-indent: -500px;
     transition: text-indent 0.3s ease;
+  }
+}
+@mixin pseudo {
+  content: "";
+  display: table;
+  clear: both;
+}
+@mixin decoration-el {
+  &::after {
+    @include pseudo;
+    position: absolute;
+    left: 49px;
+    top: 27px;
+    width: 16px;
+    height: 1px;
+    background: $color-card--btn-text;
+  }
+  &::before {
+    @include pseudo;
+    position: absolute;
+    left: 56px;
+    top: 19px;
+    width: 1px;
+    height: 16px;
+    background: $color-card--btn-text;
+  }
+  &:hover {
+    box-shadow: 0 1px 35px $bg-card-shadow;
   }
 }

@@ -72,6 +72,7 @@
 
 }
 .work-procces__cards-btn {
+  @include decoration-el;
   position: absolute;
   bottom: -25px;
   width: 228px;
@@ -80,29 +81,4 @@
   order: 4;
   background: #ffffff;
   color: $color-card--btn-text;
-  &::after {
-    content: "";
-    display: table;
-    clear: both;
-    position: absolute;
-    left: 49px;
-    top: 27px;
-    width: 16px;
-    height: 1px;
-    background: $color-card--btn-text;
-  }
-  &::before {
-    content: "";
-    display: table;
-    clear: both;
-    position: absolute;
-    left: 56px;
-    top: 19px;
-    width: 1px;
-    height: 16px;
-    background: $color-card--btn-text;
-  }
-  &:hover {
-    box-shadow: 0 1px 35px $bg-card-shadow;
-  }
 }
