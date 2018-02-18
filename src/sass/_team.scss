@@ -18,26 +18,46 @@
 .team-cards__item {
   @include flex-col;
   position: relative;
-  //background: #a2ed73;
   margin-right: 30px;
   width: 360px;
   height: 445px;
-  border: 1px solid rgba(20, 20, 21, 0.04);
+  border: 1px solid rgba(20, 20, 21, 0.15);
+  border-radius: 2px;
+  &:hover {
+    border-color: rgba(20, 20, 21, 0.04);
+  }
   &:last-child {
     margin-right: 0;
     background: #ffffff url('../img/team3.jpg')  no-repeat;
     background-size: 100% 100%;
+    &:hover {
+      background: linear-gradient(to top, rgba(253, 253, 253, 1) 50%, rgba(233, 233, 233, 0)),
+               url('../img/team3.jpg')  no-repeat;
+      background-size: 100% 100%;
+    }
   }
   &:first-child {
     background: #ffffff url('../img/team1.jpg') no-repeat;
     background-size: 100% 100%;
+    &:hover {
+      background: linear-gradient(to top, rgba(253, 253, 253, 1) 50%, rgba(233, 233, 233, 0)),
+      url('../img/team1.jpg')  no-repeat;
+      background-size: 100% 100%;
+    }
   }
   &:nth-child(2) {
     background: #ffffff url('../img/team2.jpg') no-repeat;
     background-size: 100% 100%;
+    &:hover {
+      background: linear-gradient(to top, rgba(253, 253, 253, 1) 50%, rgba(233, 233, 233, 0)),
+      url('../img/team2.jpg')  no-repeat;
+      background-size: 100% 100%;
+    }
   }
   &:hover .team-cards__item-info {
     bottom: 7px;
+    background: none;
+    border: none;
   }
   &:hover .team-cards__item-info--social-wrapper {
     display: block;
@@ -56,7 +76,6 @@
   margin-top: 175px;
   align-self: center;
   height: 95px;
-  background: #ffffff;
 }
 .team-cards__item-skill--decoration {
   @include standard-text;
