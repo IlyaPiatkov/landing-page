@@ -45,14 +45,15 @@
 }
 .main-header__wrapper-text {
   @include flex-col;
-  margin-top: 25px;
+  margin-top: 23px;
 }
 .main-header__text {
   @include standard-text;
+  padding-left: 5px;
 }
 .main-header__wrapper-form {
   @include flex-row;
-  margin-top: 105px;
+  margin-top: 107px;
 }
 .main-header__form {
   @include flex-col;
