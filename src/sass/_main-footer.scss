@@ -5,6 +5,7 @@
 }
 .main-footer__top {
   @include flex-row;
+  flex-wrap: wrap;
 }
 .main-footer__top-wrapper-img {
   margin: 0;
@@ -19,7 +20,10 @@
     margin-right: 69px;
   }
   &:nth-child(5) {
-    margin-right: 61px;
+    margin-right: 58px;
+  }
+  &:nth-child(6) {
+    margin: 0;
   }
 }
 .main-footer__bottom {
