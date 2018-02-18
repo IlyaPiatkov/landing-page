@@ -1,0 +1,36 @@
+.main-footer {
+  @include container;
+  @include flex-col;
+  margin-top: 220px;
+}
+.main-footer__top {
+  @include flex-row;
+}
+.main-footer__top-wrapper-img {
+  margin: 0;
+  margin-right: 90px;
+  &:first-child {
+    margin-left: 9px;
+  }
+  &:nth-child(3) {
+    margin-right: 50px;
+  }
+  &:nth-child(4) {
+    margin-right: 69px;
+  }
+  &:nth-child(5) {
+    margin-right: 61px;
+  }
+}
+.main-footer__bottom {
+  @include flex-col;
+  margin-top: 133px;
+}
+.main-footer__bottom-btn {
+  padding-left: 82px;
+  padding-right: 80px;
+  align-self: center;
+  background: #ffffff;
+  border: 1px solid rgba(1, 2, 2, 0.07);
+  box-shadow: 0 11px  20px rgba(20, 20, 21, 0.1);
+}
