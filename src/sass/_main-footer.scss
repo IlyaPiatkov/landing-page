@@ -34,3 +34,29 @@
   border: 1px solid rgba(1, 2, 2, 0.07);
   box-shadow: 0 11px  20px rgba(20, 20, 21, 0.1);
 }
+.main-footer__wrapper-bottom {
+  @include flex-row;
+  margin: 50px 0;
+  justify-content: center;
+}
+.main-footer__bottom-social {
+  @include flex-row;
+}
+.main-footer__bottom-social--decoration {
+  display: flex;
+  margin-right: 16px;
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  background: #d3d3d3;
+  & img {
+    margin: auto;
+  }
+  &:hover {
+    background: #ff6e47;
+  }
+}
+.main-footer__bottom-copyright {
+  @include standard-text;
+  font-size: 17px;
+}
