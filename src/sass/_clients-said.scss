@@ -1,0 +1,62 @@
+.clients-said {
+  @include container;
+  @include flex-col;
+  margin-top: 304px;
+}
+.clients-said__title {
+  @include title-text;
+}
+.clients-said__text {
+  @include standard-text;
+  margin-top: 1px;
+  padding-left: 6px;
+}
+.clients-said-slider {
+  @include flex-row;
+  margin-top: 137px;
+}
+.clients-said-slider__wrapper-card {
+  @include flex-col;
+}
+.clients-said-slider__card {
+  @include flex-col;
+  position: relative;
+  margin: 0 13px 0 21px;
+  box-shadow: 0 0 27px rgba(20, 20, 21, 0.09);
+  &:hover {
+    box-shadow: 0 0 1px rgba(20, 20, 21, 0.75);
+  }
+}
+.clients-said-slider__wrapper-img {
+  margin: 0;
+  position: absolute;
+  left: 41%;
+  top: -58px;
+}
+.clients-said-slider__card-text {
+  @include standard-text;
+  font-family: $font-client-said;
+  font-size: 17px;
+  margin-top: 89px;
+  padding: 0 40px;
+  text-align: center;
+}
+.clients-said-slider__wrapper-stars {
+  margin-top: 17px;
+  align-self: center;
+}
+.clients-said-slider__card-text-after {
+  @include standard-text;
+  font-family: $font-client-said;
+  font-size: 17px;
+  margin: 12px 0 35px 0;
+  font-style: italic;
+}
+.clients-said-slider__card-text-after--decoration {
+  font-style: normal;
+}
+.clients-said-slide__paginate {
+  background: #000;
+  width: 50px;
+  height: 5px;
+}
